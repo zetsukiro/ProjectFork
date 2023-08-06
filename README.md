@@ -14,5 +14,13 @@ cd final<br />
 1: python manage.py runserver<br />
 2: Open your web browser and go to http://localhost:8000 to access the application.
 ### Images
-
+#### Home Page
 ![Capture](https://github.com/kaunwei/Project/assets/113230557/f5308320-4b25-41d3-bab6-d9653ac9584d)
+#### About us
+![image](https://github.com/kaunwei/Project/assets/113230557/ac2a9fa6-73ad-47a6-8954-50861aaf6ee6)
+#### Service
+![image](https://github.com/kaunwei/Project/assets/113230557/67999438-af98-4dee-8bd8-402d24db20f1)
+#### Term & policy
+![image](https://github.com/kaunwei/Project/assets/113230557/9eed9c07-97ad-44ae-a7d7-1302c8301a87)
+#### FAQ
+![image](https://github.com/kaunwei/Project/assets/113230557/b24dd685-df0b-423b-aa6b-3cc46a151244)
