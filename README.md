@@ -15,3 +15,4 @@ cd final<br />
 2: Open your web browser and go to http://localhost:8000 to access the application.
 ### Images
 
+![Capture](https://github.com/kaunwei/Project/assets/113230557/f5308320-4b25-41d3-bab6-d9653ac9584d)
