@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutus</title>
+    <link rel="stylesheet" href="/static/Css/style.css">
+</head>
+<body>
+<!--HEADER-->
+<header>
+<div class="logo"><img src="/static/img/logo.png" class="img"></div>
+<nav>
+<ul>
+<li><a href="{% url 'index' %}">Home</a></li>
+<li><a href="{% url 'home' %}">About</a></li>
+<li><a href="{% url 'Term' %}">Term & Privacy</a></li>
+<li><a href="{% url 'FAQ' %}">FAQ</a></li>
+</ul>
+</nav>
+</header>
+ <h1 class="cs">What we do</h1>
+ <!--CARD DIV START-->
+<div class="carMain">
+<!--FIRST CARD--> 
+<div class = container>
+        <div class = card>
+        <div class = image>
+        <img href = "#" src="/static/img/pic.png">
+        </div>
+        <div class = content>
+        <h3>Pencil sketch your photo</h3>
+        <p>pencil sketch your photo is a free online tool, where it make your photo to pencil sketched quickly. Just upload your photo, set the pencil shadow or thickness, then click pencil sketch button to enhance uploaded photo to pencil sketched image.</p>
+        </div>
+        </div>    
+</div>
+<!--2ND CARD-->
+<div class = container>
+        <div class = card>
+        <div class = image>
+        <img href = "#" src="/static/img/doc.png">
+        </div>
+        <div class = content>
+        <h3>How this tool working?</h3>
+        <p>For making photo to pencil sketch, we use combined set of process like negate, blur, color dodge, modulate etc. First step is to upload the photo to web server and then enhance it by applying the listed filters.</p>
+        </div>
+        </div>    
+</div>
+<!--3RD CARD-->
+<div class = container>
+        <div class = card>
+        <div class = image>
+        <img href = "#" src ="/static/img/smile.png">
+        </div>
+        <div class = content>
+        <h3>Is it free tool?</h3>
+        <p>Our tool is completely free to use. It is a full version, no hidden payments, no signup required, no demo versions and no other limitations. You can draw pencil sketch on your photo, without any restrictions.</p>
+        </div>
+        </div>    
+        </div>
+</div>
+<!--4TH CARD-->
+<div class="carMain"> <!--2ND PORTION OF CARDS-->
+<div class = container>
+          <div class = card>
+          <div class = image>
+          <img href = "#" src = "/static/img/lock.png">
+          </div>
+          <div class = content>
+          <h3>Are my images secured?</h3>
+          <p>We use user sessions to make a directory under temp folder in server. your photo is uploaded under the complex file path and it is deleted once the queue is filled in server. We guranteed that no one can access your photos except you.</p>
+          </div>
+          </div>    
+</div>
+<!--5TH CARD-->
+<div class = container>
+          <div class = card>
+          <div class = image>
+          <img href = "#" src ="/static/img/thumb.jpg">
+          </div>
+          <div class = content>
+          <h3>Simple to use</h3>
+          <p>Simple tool, No special skills are required to convert your photo to pencil sketch with our tool, just Upload your photo, set pencil shadow and click "pencil sketch" button to process. once the process completed, you can preview and download your pencil sketched photo.</p>
+          </div>
+          </div>    
+</div>
+<!--6TH CARD-->
+<div class = container>
+          <div class = card>
+          <div class = image>
+          <img href = "#" src ="/static/img/unlock.png">
+          </div>
+          <div class = content>
+          <h3>Server side process</h3>
+          <p>We used server side scripts to convert photo to pencil sketch, because its quite easier to apply set of process while drawing pencil sketch image. Dont worry, your image is uploaded in temp path of server and we delete that once the queue is filled.</p>
+          </div>
+          </div>    
+          </div>
+</div>
+<!--FOOTER-->
+<footer>
+        <p>&copy; 2023 Image to Sketch Converter</p>
+</footer>
+</body>
+</html>

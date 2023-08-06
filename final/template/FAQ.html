@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/Css/FAQ.css">
+    <title>Document</title>
+</head>
+<body>
+<!--HEADER SECTION-->
+<header>
+<div class="logo"><img src="/static/img/logo.png" class="img"></div>
+<nav>
+<ul>
+<li><a href="{% url 'index' %}">Home</a></li>
+<li><a href="{% url 'home' %}">About</a></li>
+<li><a href="{% url 'about' %}">Service</a></li>
+<li><a href="{% url 'Term'  %}">Term & Privacy</a></li>
+</ul>
+</nav>
+</header>
+<br><br><br>
+<h1>Frequently Ask Question (FAQ)</h1>
+<!--FAQ QUESTIONS PORTION-->
+<div class="faq">
+<!--1ST QUESTION-->
+<div>
+         <p class="question">1. How can you turn a photo into a sketch? <span onclick='faq(this)' class="opener">+</span></p>
+         <p class="answer">Step 1. Add photos or drag and drop your photo into the Media.io Image to Sketch converter.
+         <br> Step 2. Start the conversion process with just one click.
+       <br>   Step 3. Download the resultant sketch and modify it according to your needs..</p>
+</div>
+<!--2ND QUESTION-->
+<div>    
+         <p class="question">2. How do I turn a picture into a pencil sketch? <span onclick='faq(this)' class="opener">+</span></p>
+         <p class="answer">Step 1. Open Media.io and upload the image you want to use as a pencil sketch.
+      <br>    Step 2. Click on the "Start the process" option, and wait for a few seconds.
+        <br>  Step 3. When you are happy with the result, download it to your device.</p>
+ </div>
+<!--3RD QUESTION-->   
+        <div>    
+         <p class="question">3. What is an image to sketch converter?<span onclick='faq(this)' class="opener">+</span></p>
+         <p class="answer"> An image to sketch converter is a software or tool that can take a digital image and transform it into a sketched or drawn version of the image. This can include converting a photograph into a pencil sketch or turning a color image into a black and white line drawing. These converters are commonly used by artists, designers, and photographers to create unique visual effects and styles in their work.</p>  
+</div>
+<!--4TH QUESTION-->
+<div>    
+          <p class="question">4. What types of images can an image to sketch converter app convert?<span onclick='faq(this)' class="opener">+</span></p>
+          <p class="answer"> The types of images that an image to sketch converter app can convert may vary depending on the specific app, but in general, they can convert any digital image that is in a common format such as JPEG, PNG, BMP, and TIFF. Some apps may also support other file types such as RAW image files. It's important to note that the quality of the converted sketch may depend on the quality and resolution of the original image.</p>  
+</div>
+<!--5TH QUESTION-->
+<div>    
+          <p class="question">5. How does an image to sketch converter app work?<span onclick='faq(this)' class="opener">+</span></p>
+          <p class="answer"> An image to sketch converter app works by using various algorithms to analyze the input image and create a sketched or drawn version of it. The app may offer different styles and settings to customize the output, such as adjusting the stroke thickness, color intensity, and contrast. Some apps may use neural networks and machine learning techniques to create more realistic and natural-looking sketches. The process may take some time depending on the complexity of the image and the app's processing power, but once the conversion is complete, the user can save and export the sketched image in various file formats.</p>  
+</div>
+</div> <!--END MAIN DIV TAG-->
+<!--SCRIPT FOR OUR CARDS-->
+<script>
+          function faq(ele)
+          {
+          var x = ele.parentElement.nextElementSibling.style.cssText;
+          if(x=='max-height: 500px;')
+          {    
+          ele.style.cssText='transform: rotate(0deg);';     
+          ele.parentElement.nextElementSibling.style.cssText = "transition:0.3s;max-height:0px;";    
+          }
+          else
+          {
+          ele.style.cssText='transform: rotate(45deg);';   
+          ele.parentElement.nextElementSibling.style.cssText = "max-height:500px;";
+          }
+          }
+</script>
+<!--FOOTER-->      
+<footer>
+        <p>&copy; 2023 Image to Sketch Converter</p>
+</footer>
+</body>
+</html>

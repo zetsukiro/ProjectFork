@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/Css/about.css">
+    <title>Home Page</title>
+</head>
+<body>
+<!--HEADER-->
+<header>
+<div class="logo"><img src="/static/img/logo.png" class="img"></div>
+<nav>
+<ul>
+<li><a href="{% url 'index' %}">Home</a></li>
+<li><a href="{% url 'about' %}">Service</a></li>
+<li><a href="{% url 'Term' %}">Term & Privacy</a></li>
+<li><a href="{% url 'FAQ' %}">FAQ</a></li>
+</nav>
+</header>
+<div class="mainhome">       
+<h1>Convert any photo into a sketch with a click</h1>
+<br>
+<p>Do you want to turn your favorite image or photos into beautiful sketches? You can use Colorcinch image to sketch converter to turn any image into a drawing with just a click. You can convert and adjust your photos with sketch effects any way you like, for free. Your photo will look like a pencil drawing!</p>
+<br>
+<h1>How to Turn Photo to Sketch Instantly?</h1>  
+</div>
+<!--Cards-->  
+  <ol class="ay">
+<!--CARD 1-->
+    <li >
+        <div class="icon"><i class="fa-solid fa-bicycle"></i></div>
+        <div class="title">Step 1</div>
+        <div class="descr">Click the Add Photo button to upload your local file or just drag & drop your picture to the interface.</div>
+    </li>
+<!--CARD 2-->
+    <li >
+        <div class="icon"><i class="fa-solid fa-car"></i></div>
+        <div class="title">Step 2</div>
+        <div class="descr">After clicking Start to Process button, just wait for I-S Converter to convert your picture to sketch automatically. </div>
+    </li>
+<!--CARD 3-->
+    <li >
+        <div class="icon"><i class="fa-solid fa-helicopter"></i></div>
+        <div class="title">Step 3</div>
+        <div class="descr">Now click the Download button to get the resulting photo in a sketch with high quality. It's super easy and fast!</div>
+    </li>
+</ol>
+<br><br>
+<!--FOOTER-->
+<footer>
+  <p>&copy; 2023 Image to Sketch Converter</p>
+</footer>
+</body>
+</html>

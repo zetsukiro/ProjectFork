@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Image to Sketch Converter</title>
+    <link rel="stylesheet" href="/static/Css/theme.css">
+  </head>
+  <body>
+<!--HEADER-->
+<header>
+<div class="logo"><img src="/static/img/logo.png" class="img"></div>
+<nav>
+<ul>
+<li><a href="{% url 'home' %}">About</a></li>
+<li><a href="{% url 'about' %}">Service</a></li>
+<li><a href="{% url 'Term' %}">Term & Privacy</a></li>
+<li><a href="{% url 'FAQ' %}">FAQ</a></li>
+</ul>
+</nav>
+</header>
+<!--dESCRIPTION-->   
+<div class="Desc">
+<main>
+   
+      <h3>Image to Sketch</h3>
+      <h1>Convert your img to  <br>sketch with ease</h1>
+      <p>Turn photo into line drawing sketch without lose of <br> details, like painted by an artist</p>
+      <form onsubmit="return checkEmpty()" action="upload" enctype="multipart/form-data" method="post"/>
+      {% csrf_token %}
+        <label for="image">Upload Image</label>
+        <br>
+        <div class="descimg">
+      
+        </div>
+        <input type="file" name="ImageUpload" id="ImageUpload" accept="image/*"/><br><br>
+        <button type="submit" value="Convert">Convert to Sketch</button>
+      </form>
+      <br><br>
+      <table width="500" align="center">
+				<tr>
+					<td align="center">
+						Image Converted to Sketch<br>
+						<img src="{% if data %} {{data}} {% endif %}" alt="result" class="img-result"/>
+					</td>
+				</tr>
+				<td align="center">
+					<a class="button icon solid fa-download" style="color: bisque;" href="{% if data  %} {{data}} {% endif %}" download="sketch_image2sketch.png">
+						Download Converted Image</a>
+				</td>
+        <br>
+			</tr>
+		</table>
+        <br><br>
+</main></div>
+<!--FOOTER--> 
+<footer>
+      <p>&copy; 2023 Image to Sketch Converter</p>
+</footer>
+<!--EXTERNAL JS-->
+    <script src="/static/JS/script.js"></script>
+</body>
+</html>
