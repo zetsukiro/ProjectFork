@@ -1,3 +1,5 @@
+Irtaza: Forked project, cloned repo, modified readme file.
+
 # Image to Sketch Converter in Django
 This project is a web application built using Django, which allows users to convert their images into sketches. It utilizes computer vision algorithms to process the input images and generate artistic sketch versions of them. The application aims to provide a simple and user-friendly interface for users to upload their images and obtain unique sketch representations.
 ### Getting Started
